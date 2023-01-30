@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <style>
+      body {
+        background-color: #87CEFA; /* Light blue */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .main-button {
+        width: 300px;
+        height: 80px;
+        font-size: 24px;
+        margin: 20px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 80px;
+      }
+      .side-button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+        margin: 10px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 50px;
+      }
+      .top-left-button, .top-right-button {
+        width: 110px;
+        height: 50px;
+        font-size: 18px;
+        margin: 10px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+      }
+      .top-left-button {
+        top: 10px;
+        left: 10px;
+      }
+      .top-right-button {
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button id="logout" class="top-left-button">خروج</button>
+      <button id="profile" class="top-right-button">پروفایل</button>
+    </header>
+    <main>
+      <div class="container">
+        <button id="order-food" class="main-button">سفارش غذا</button>
+        <button id="reserve-room" class="main-button">رزرو اتاق</button>
+        <button id="last-foods" class="side-button">آخرین وعده ها</button>
+        <button id="last-rooms" class="side-button">تاریخچه رزرو</button>
+      </div>
+    </main>
+
+    <script src="home.js">
+
+    </script>
+
+  </body>
+</html>

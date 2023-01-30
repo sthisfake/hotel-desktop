@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+              body {
+          background-color: #87CEFA; 
+              }/* Light blue */
+          /* direction: rtl; */
+        /* } */
+      .food-item {
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+      }
+
+      .food-name {
+        flex: 1;
+      }
+
+      .food-price {
+        flex: 1;
+        text-align: right;
+      }
+
+      .buy-button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #4CAF50;;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .back-button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="food-list">
+      <!-- Iterate through the foods object and create a food item for each -->
+    </div>
+    <button class="back-button" onclick="window.history.back()">بازگشت</button>
+    <script src="lastFoods.js">
+    </script>
+  </body>
+</html>

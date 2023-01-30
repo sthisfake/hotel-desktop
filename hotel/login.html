@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ورود</title>
+    <style>
+            body {
+        background-color: #87CEFA; /* Light blue */
+        direction: rtl;
+      }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #888888;
+      }
+      h1 {
+        text-align: center;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+      label {
+        font-size: 18px;
+        color: #333333;
+        margin-bottom: 10px;
+        display: block;
+      }
+      input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 18px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        padding: 14px 20px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ورود</h1>
+      <form>
+        <label for="phoneNumber">شماره تفن:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="شماره تلفن خود را وارد کنید">
+        
+        <label for="password">پسورد:</label>
+        <input type="password" id="password" name="password" placeholder="پسورد خود را وارد کنید">
+
+        <input type="submit" value="ورود" id="submitBut">
+        <input type="button" value="بازگشت" onclick="window.history.back()">
+
+
+      </form>
+    </div>
+
+    <script src="login.js">
+    </script>
+
+  </body>
+</html>

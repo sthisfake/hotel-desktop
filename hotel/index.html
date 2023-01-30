@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const electron = window.require('electron');
+      const ipcRenderer = electron.ipcRenderer;
+
+      const handleSubmit = () => {
+        const formData = new FormData(document.getElementById('my-form'));
+        ipcRenderer.send('my-event', formData);
+      };
+
+      ipcRenderer.on('my-event-response', (event, arg) => {
+        console.log('my-event-response received:', arg);
+      });
+    </script>
+  </head>
+  <body>
+    <form id="my-form">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <input type="submit" value="Submit" onclick="handleSubmit();">
+    </form>
+  </body>
+</html>
